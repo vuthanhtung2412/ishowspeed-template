@@ -1,0 +1,28 @@
+min_version = "2024.9.5"
+
+[env]
+# PYTHONPATH = "{{config_root}}"
+_.python.venv = { path = ".venv", create = true }
+
+[tools]
+node = "24.0"
+python = "3.10"
+uv = "latest"
+
+[tasks.install]
+description = "Install dependencies"
+alias = "i"
+dir = "{{config_root}}/back"
+run = "uv pip install -r requirements.txt"
+
+[tasks.freeze]
+description = "Freeze dependencies"
+alias = "f"
+dir = "{{config_root}}/back"
+run = "uv pip freeze > requirements.txt"
+
+[tasks.start_backend]
+description = "Start backend"
+alias = "sb"
+dir = "{{config_root}}/back"
+run = "fastapi dev main.py"
