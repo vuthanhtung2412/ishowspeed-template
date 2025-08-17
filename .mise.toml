@@ -8,6 +8,7 @@ _.python.venv = { path = ".venv", create = true }
 node = "24.0"
 python = "3.10"
 uv = "latest"
+pnpm = "9"
 
 [tasks.install]
 description = "Install dependencies"
