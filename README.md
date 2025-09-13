@@ -31,4 +31,4 @@ cd electron && pnpm install
 - [ ] how to port Vite to Electron
 - [ ] bundle backend with Electron
 - [x] deploy vite frontend to github pages
-+ [ ] Use hash router instead of normal one
++ [x] Use hash router instead of normal one
