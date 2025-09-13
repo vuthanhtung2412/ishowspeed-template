@@ -30,4 +30,4 @@ cd electron && pnpm install
 
 - [ ] how to port Vite to Electron
 - [ ] bundle backend with Electron
-- [ ] deploy vite frontend to github.io 
+- [x] deploy vite frontend to github pages

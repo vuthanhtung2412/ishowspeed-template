@@ -6,7 +6,8 @@ import XTailwindLayout from './pages/TailwindXLayout.tsx';
 import Layout from './pages/tailwind/layout.tsx';
 
 createRoot(document.getElementById('root')!).render(
-  <BrowserRouter>
+  // TODO: change this 
+  <BrowserRouter basename="/ishowspeed-template">
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="tailwindx" element={<XTailwindLayout />}>
